@@ -1,0 +1,23 @@
+References
+Almeida, M., Laskaridis, S., Mehrotra, A., Dudziak, L., Leontiadis, I., & Lane, N. D. (2021, September 28). Smart at what cost? Characterising Mobile Deep Neural Networks in the wild. ArXiv.org. https://doi.org/10.48550/arXiv.2109.13963.
+Bayer, P. E., & Edwards, D. (2021). Machine learning in agriculture: from silos to marketplaces. Plant Biotechnology Journal, 19(4), 648–650. https://doi.org/10.1111/pbi.13521.
+Brodeur, Garrett L., et al. “ChatGPT for Legal and Tax Professionals.” CPA Journal, vol. 93, no. 7/8, July 2023, pp. 68–71. EBSCOhost, https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,shib&db=bth&AN=170389250&site=eds-live&scope=site&custid=ns235470.
+Canhoto, A. I., & Clear, F. (2020). Artificial intelligence and machine learning as business tools: A framework for diagnosing value destruction potential. Business Horizons, 63(2), 183–193. https://www.sciencedirect.com/science/article/pii/S0007681319301570.
+Gordon, C., Hendrix, E., He, Y., & Walker, M. C. (2023). AlphaFold Accurately Predicts the Structure of Ribosomally Synthesized and Post-Translationally Modified Peptide Biosynthetic Enzymes. Biomolecules, 13(8), 1243–1243. https://doi.org/10.3390/biom13081243.
+Gyeong Deok Jo, Ahn, C., Jung Hee Hong, Kim, D., Park, J., Kim, H., Jong Hyo Kim, Jin Mo Goo, & Ju Gang Nam. (2023). 75% radiation dose reduction using deep learning reconstruction on low-dose chest CT. BMC Medical Imaging, 23(1). https://doi.org/10.1186/s12880-023-01081-8.
+Heguerte, Lucia Bouza, et al. How to Estimate Carbon Footprint When Training Deep Learning Models? A Guide and Review. 2023. EBSCOhost, https://doi.org/10.1088/2515-7620/acf81b.
+Johnson, J., & Bullock, D. (2023). Fragility in AIs Using Artificial Neural Networks. Communications of the ACM, 66(7), 28–31. https://doi.org/10.1145/3571280.
+Langen, H., & Huber, M. (2023). How causal machine learning can leverage marketing strategies: Assessing and improving the performance of a coupon campaign. PLOS ONE, 18(1), e0278937. https://doi.org/10.1371/journal.pone.0278937.
+Liu, Jinrun, et al. Which Is a Better Programming Assistant? A Comparative Study between Chatgpt and Stack Overflow. 2023. EBSCOhost, https://doi.org/10.48550/arXiv.2308.13851.
+Mai, K. T., Bray, S. D., Davies, T., & Griffin, L. D. (2023). Warning: Humans cannot reliably detect speech deepfakes. PLOS ONE, 18(8), e0285333–e0285333. https://doi.org/10.1371/journal.pone.0285333.
+Michaud, E. J., Liu, Z., & Tegmark, M. (2023). Precision Machine Learning. Entropy, 25(1), 175. https://doi.org/10.3390/e25010175.
+Patterson, David, et al. Carbon Emissions and Large Neural Network Training. 2021. EBSCOhost, https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,shib&db=edsarx&AN=edsarx.2104.10350&site=eds-live&scope=site&custid=ns235470.
+Qu, Z., Wang, Y., Guo, D., He, G., Sui, C., Duan, Y., Zhang, X., Lan, L., Meng, H., Wang, Y., & Liu, X. (2023). Identifying depression in the United States veterans using deep learning algorithms, NHANES 2005–2018. BMC Psychiatry, 23(1). https://doi.org/10.1186/s12888-023-05109-9.
+Rashno, E., Akbari, A., & Nasersharif, B. (2022). Uncertainty handling in convolutional neural networks. Neural Computing and Applications, 34(19), 16753–16769. https://doi.org/10.1007/s00521-022-07313-2.
+Shang, F., Lan, Y., Yang, J., Li, E., & Kang, X. (2023). Robust data hiding for JPEG images with invertible neural network. Neural Networks, 163, 219–232. https://doi.org/10.1016/j.neunet.2023.03.037.
+Tancik, M., Srinivasan, P. P., Mildenhall, B., Fridovich-Keil, S., Raghavan, N., Singhal, U., Ramamoorthi, R., Barron, J. T., & Ng, R. (2020). Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains. ArXiv:2006.10739 [Cs]. https://arxiv.org/abs/2006.10739.
+Tang, Z., Yang, Z., Zhu, C., Zeng, M., & Bansal, M. (2023, May 19). Any-to-Any Generation via Composable Diffusion. ArXiv.org. https://doi.org/10.48550/arXiv.2305.11846.
+Tao, P., Cheng, J., & Chen, L. (2022). Brain-inspired chaotic backpropagation for MLP. Neural Networks. https://doi.org/10.1016/j.neunet.2022.08.004.
+Wang, T. T., Gleave, A., Belrose, N., Tseng, T., Miller, J., Dennis, M. D., Duan, Y., Pogrebniak, V., Levine, S., & Russell, S. (2022). Adversarial Policies Beat Professional-Level Go AIs. ArXiv:2211.00241 [Cs, Stat]. https://arxiv.org/abs/2211.00241.
+
+
