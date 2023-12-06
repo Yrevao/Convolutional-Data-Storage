@@ -71,6 +71,27 @@ class DirectoryOptimizationApproach():
 
         self.model.fit(self.trainX, self.trainY, epochs = self.epochs, verbose=1)
 
+    # make a prediction from string, return string
+    def predictStr(self, dir, strLength):
+        length = strLength * 2
+        input = []
+        predictedData = [None] * length
+        
+        # tokenize and add index indicators to input directory
+        for i in range(0, length):
+            optimizedDir = self.dirList[self.dupeDirDict[dir]]
+            dirToken = self.dirTokens[optimizedDir]
+            input.append([dirToken, i])
+        
+        # format input and predict
+        formattedInput = np.asarray(input).astype('float32')
+        prediction = self.model.predict(formattedInput)
+        
+        # decode prediction
+        predictedData = list(map(utils.oneHotToHex, prediction))
+        hexData = "".join(predictedData)
+        return utils.decodeText(hexData)
+
     # evaluate model
     def evaluate(self, batch):
         score = self.model.evaluate(self.trainX, self.trainY, verbose=0)

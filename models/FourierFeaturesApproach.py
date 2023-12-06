@@ -41,8 +41,8 @@ class FourierFeaturesApproach():
 
         self.model.add(layers.Embedding(input_dim=inputSpace, output_dim=256))
         self.model.add(layers.GlobalAveragePooling1D())
-        self.model.add(FourierFeatureProjection(gaussian_projection=128, gaussian_scale=2.0))
         self.model.add(layers.Dense(128, activation='relu'))
+        self.model.add(FourierFeatureProjection(gaussian_projection=128, gaussian_scale=2.0))
         self.model.add(layers.Dense(16, activation='sigmoid'))
 
         self.model.compile(optimizer='adam',
@@ -50,6 +50,26 @@ class FourierFeaturesApproach():
             metrics=metrics.CategoricalAccuracy())
 
         self.model.fit(self.trainX, self.trainY, epochs = self.epochs, verbose=1)
+
+    # make a prediction from string, return string
+    def predictStr(self, dir, strLength):
+        length = strLength * 2
+        input = []
+        predictedData = [None] * length
+        
+        # tokenize and add index indicators to input directory
+        for i in range(0, length):
+            dirToken = self.dirTokens[dir]
+            input.append([dirToken, i])
+        
+        # format input and predict
+        formattedInput = np.asarray(input).astype('float32')
+        prediction = self.model.predict(formattedInput)
+        
+        # decode prediction
+        predictedData = list(map(utils.oneHotToHex, prediction))
+        hexData = "".join(predictedData)
+        return utils.decodeText(hexData)
 
     # evaluate model
     def evaluate(self, batch):

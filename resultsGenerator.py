@@ -1,3 +1,49 @@
+# current results:
+"""
+Straightforward Approach: 
+     batchA: 
+             Epochs: 100
+             Accuracy: 97.826087474823
+     batchB:
+             Epochs: 50
+             Accuracy: 88.98147940635681
+     batchC:
+             Epochs: 10
+             Accuracy: 75.71428418159485
+             Duplicate Precision: 62.142857142857146
+     batchD:
+             Epochs: 5
+             Accuracy: 97.27280139923096
+Directory Optimization Approach:
+     batchA:
+             Epochs: 100
+             Accuracy: 96.7391312122345
+     batchB:
+             Epochs: 50
+             Accuracy: 88.14814686775208
+     batchC:
+             Epochs: 100
+             Accuracy: 96.42857313156128
+             Duplicate Precision: 100.0
+     batchD:
+             Epochs: 5
+             Accuracy: 98.62837791442871
+Fourier Features Approach:
+     batchA:
+             Epochs: 5
+             Accuracy: 98.36956262588501
+     batchB:
+             Epochs: 5
+             Accuracy: 91.4814829826355
+     batchC:
+             Epochs: 5
+             Accuracy: 76.42857432365417
+             Duplicate Precision: 62.857142857142854
+     batchD:
+             Epochs: 3
+             Accuracy: 92.41597652435303
+"""
+
 import lib.utils as utils
 
 # import models
@@ -12,15 +58,16 @@ def runModel(modelConfig, batches):
 
     for batch in batches:
         # generate list of file directories and file data for current batch
-        dirList = []
-        dirIndex = open('batches/' + batch + '/index', 'rt')
-        for dir in dirIndex:
+        dirList = []  # list of complete directories for data collection
+        dirIndex = [] # shortened directories for user input
+        for dir in open('batches/' + batch + '/index', 'rt'):
             lineBreakIndex = len(dir) - 1
             dirList.append('batches/' + batch + '/' + dir[:lineBreakIndex])
+            dirIndex.append(dir[:lineBreakIndex])
 
         dataList = list(map(utils.getFileData, dirList))
         
-        model.train(dirList, dataList, modelConfig[batch])
+        model.train(dirIndex, dataList, modelConfig[batch])
         scores[batch] = {
             "scores": model.evaluate(batch),
             "epochs": modelConfig[batch]
@@ -54,7 +101,7 @@ def generateResults():
         "batchA": 5,
         "batchB": 5,
         "batchC": 5,
-        "batchD": 2
+        "batchD": 3
     }
     modelConfigs = [
         StraightforwardApproachConfig,
