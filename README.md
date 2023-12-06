@@ -2,7 +2,7 @@
 Data storage using convolutional neural networks, implemented with Tensorflow 2.0.
 
 # Current Results
-- Straightforward Approach: 
+1. Straightforward Approach: 
      - batchA: 
              - Epochs: 100
              - Accuracy: 97.826087474823
@@ -16,7 +16,7 @@ Data storage using convolutional neural networks, implemented with Tensorflow 2.
      - batchD:
              - Epochs: 5
              - Accuracy: 97.27280139923096
-- Directory Optimization Approach:
+2. Directory Optimization Approach:
      - batchA:
              - Epochs: 100
              - Accuracy: 96.7391312122345
@@ -30,7 +30,7 @@ Data storage using convolutional neural networks, implemented with Tensorflow 2.
      - batchD:
              - Epochs: 5
              - Accuracy: 98.62837791442871
-- Fourier Features Approach:
+3. Fourier Features Approach:
      - batchA:
              - Epochs: 5
              - Accuracy: 98.36956262588501
