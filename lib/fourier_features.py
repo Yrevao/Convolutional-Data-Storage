@@ -6,6 +6,7 @@ class FourierFeatureProjection(tf.keras.layers.Layer):
 
     def __init__(self, gaussian_projection: int, gaussian_scale: float = 1.0, **kwargs):
         """
+        This source file is unmodified from this repo: https://github.com/titu1994/tf_fourier_features/blob/master/tf_fourier_features/fourier_features.py
         Fourier Feature Projection layer from the paper:
         [Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains](https://arxiv.org/abs/2006.10739)
 
